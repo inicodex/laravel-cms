@@ -1,21 +1,21 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 ### Descripción del Proyecto
-Este es CMS Blog Build con Laravel, tiene una funcionalidad de panel de control completa con roles de usuarios.
+Este es CMS construido con Laravel, tiene una funcionalidad completa con roles de usuarios.
 
 ### Para qué lo uso este proyecto
-- Marco Laravel 10,
-- Viento de cola para el frente y el administrador,
-- Políticas de Laravel,
-- Puertas de Laravel,
-- Correo Laravel,
-- Laravel Colas (Boletín semanal de construcción),
-- Regla de validación personalizada,
-- Comentarios, Aplicados (relación polimórfica),
-- Relaciones aplicadas (uno a muchos y muchos a muchos) entre modelos,
-- Recuento de vistas de publicaciones usando cookies,
-- Falsificador y sembrador de bases de datos,
-- jQuery,
+- Marco Laravel 10
+- Viento de cola para el frente y el administrador
+- Políticas de Laravel
+- Puertas de Laravel
+- Correo Laravel
+- Laravel Colas (Boletín semanal de construcción)
+- Regla de validación personalizada
+- Comentarios, Aplicados (relación polimórfica)
+- Relaciones aplicadas (uno a muchos y muchos a muchos) entre modelos
+- Recuento de vistas de publicaciones usando cookies
+- Falsificador y sembrador de bases de datos
+- jQuery
 - URL de slug amigables con SEO
   
 ### Funcionalidad del proyecto
@@ -51,7 +51,7 @@ GET | api/posts/{id} | Show Specific Post
 
 ## Requerimientos
 - PHP >= 8.1
-- MySQL or other database server
+- MySQL u otro servidor de base de datos
 - Composer
 - NodeJS
 
