@@ -1,33 +1,32 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-### Project Description
-This is CMS Blog Build with Laravel, It has full control panel functionality with users roles.
-[Recorded Video for the whole project](https://youtu.be/HUvpQ2WR9rg "Recorded Video for the whole project")
+### Descripción del Proyecto
+Este es CMS construido con Laravel, tiene una funcionalidad completa con roles de usuarios.
 
-### What I use it this project
-- Laravel Framework 10,
-- Tailwind for front and admin,
-- Laravel Policies,
-- Laravel Gates,
-- Laravel Mail,
-- Laravel Queues ( Building weekly Newsletter ),
-- Custom Validation Rule,
-- Comments, Applied ( Polymorphic relationship ),
-- Applied ( One to many and Many to many ) relationships betwen models,
-- Posts Views Count using Cookies,
-- Faker & Database Seeder,
+### Para qué lo uso este proyecto
+- Marco Laravel 10
+- Viento de cola para el frente y el administrador
+- Políticas de Laravel
+- Puertas de Laravel
+- Correo Laravel
+- Laravel Colas (Boletín semanal de construcción)
+- Regla de validación personalizada
+- Comentarios, Aplicados (relación polimórfica)
+- Relaciones aplicadas (uno a muchos y muchos a muchos) entre modelos
+- Recuento de vistas de publicaciones usando cookies
+- Falsificador y sembrador de bases de datos
 - jQuery
-- SEO friendly slug URLS,
+- URL de slug amigables con SEO
+  
+### Funcionalidad del proyecto
+#### Panel de administrador
+- Editar información general del blog,
+- Crear/Actualizar/Eliminar (Categorías, Publicaciones, Etiquetas y Páginas Personalizadas)
+- Administrar roles
 
-### Project Functionality
-#### Admin Panel
-- Edit General Blog informations,
-- Create/ Update / Delete ( Categories, Posts, Tags and Custom Pages )
-- Manage Roles
-
-### Writer Panel
-- Create, Update and Delete it own Posts
-- Create, Update and Delete Tags.
+### Panel de escritores
+- Crear, actualizar y eliminar sus propias publicaciones
+- Crear, actualizar y eliminar etiquetas.
 
 ### Roles
                     
@@ -39,7 +38,7 @@ User | 3
                 
 
 ### Gate Function
-There is a gate filter login when the user login to the admin panel if the user is Admin it will have full functions to manage the blog and if a Writer it will have few functions.
+Hay un inicio de sesión de filtro de puerta cuando el usuario inicia sesión en el panel de administración, si el usuario es administrador, tendrá funciones completas para administrar el blog y si es un escritor, tendrá pocas funciones.
 
 ### Api Routes
                     
@@ -50,18 +49,21 @@ GET | api/categories/{id} | Show All Posts inside Specific Category
 GET | api/posts | Show All Posts
 GET | api/posts/{id} | Show Specific Post
 
-## Requirements
+## Requerimientos
 - PHP >= 8.1
-- MySQL or other database server
+- MySQL u otro servidor de base de datos
 - Composer
 - NodeJS
 
-### How to Install
-1. Clone the project
-2. Go to the project root directory and run `composer install` and `npm install`
-3. Create `.env` file and copy content from `.env.example`
-4. Run `php artisan key:generate` from terminal
-5. Change database information in `.env`
-6. Run migrations by executing `php artisan migrate` , Then Run  `php artisan db:seed` if you want use faker database records,
-7. Start the project by running `php artisan serve`
+### Cómo instalar
+1. Clonar el proyecto
+2. Vaya al directorio raíz del proyecto y ejecute `composer install` y `npm install`
+3. Crear `.env` archivar y copiar contenido de `.env.example`
+4. Correr `php artisan key:generate` desde terminal
+5. Cambiar la información de la base de datos en `.env`
+6. Ejecutar migraciones ejecutando `php artisan migrate` , Entonces corre  `php artisan db:seed` si quieres usar registros de base de datos falsos
+7. Correr `php artisan storage:link` desde terminal para mostrar las imagenes cargadas
+8. Comience el proyecto ejecutando el sitio publico `php artisan serve`
+9. Comience el proyecto ejecutando el sitio administrador `npm run dev`
+10. Ahora tienes el cms corriendo.
 
