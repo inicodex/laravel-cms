@@ -61,9 +61,10 @@ GET | api/posts/{id} | Show Specific Post
 3. Crear `.env` archivar y copiar contenido de `.env.example`
 4. Correr `php artisan key:generate` desde terminal
 5. Cambiar la información de la base de datos en `.env`
-6. Ejecutar migraciones ejecutando `php artisan migrate` , Entonces corre  `php artisan db:seed` si quieres usar registros de base de datos falsos
-7. Correr `php artisan storage:link` desde terminal para mostrar las imagenes cargadas
-8. Comience el proyecto ejecutando el sitio publico `php artisan serve`
-9. Comience el proyecto ejecutando el sitio administrador `npm run dev`
-10. Ahora tienes el cms corriendo.
+6. Crear la Ruta de las imagenes (storage/app/public/images/posts)
+7. Ejecutar migraciones ejecutando `php artisan migrate` , Entonces corre  `php artisan db:seed` si quieres usar registros de base de datos falsos
+8. Correr `php artisan storage:link` desde terminal para mostrar las imagenes cargadas
+9. 10. Comience el proyecto ejecutando el sitio publico `php artisan serve`
+11. Comience el proyecto ejecutando el sitio administrador `npm run dev`
+12. Ahora tienes el cms corriendo.
 
