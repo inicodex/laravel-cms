@@ -58,12 +58,17 @@ GET | api/posts/{id} | Show Specific Post
 ### Cómo instalar
 1. Clonar el proyecto
 2. Vaya al directorio raíz del proyecto y ejecute `composer install` y `npm install`
-3. Crear archivo `.env`, copiar los datos contenidos de `.env.example` luego ingresa tus credenciales
-4. Crear la Ruta de las imagenes (storage/app/public/images/posts)
-5. Ejecutar migraciones ejecutando `php artisan migrate`
-6. Corre  `php artisan db:seed` si quieres usar registros de prueba en la base de datos
-7. Correr para mostrar las imagenes cargadas `php artisan storage:link` 
-8. Genere la clave de cifrado de su aplicación usando `php artisan key:generate`
-9. Comience el proyecto ejecutando el sitio publico `php artisan serve`
-10. Comience el proyecto ejecutando el sitio administrador `npm run dev`
+3. Vaya al directorio raíz del proyecto y Crear archivo `.htaccess`, agregar el script
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+    </IfModule>
+4. Crear archivo `.env`, copiar los datos contenidos de `.env.example` luego ingresa tus credenciales
+5. Crear la Ruta de las imagenes (storage/app/public/images/posts)
+6. Ejecutar migraciones ejecutando `php artisan migrate`
+7. Corre  `php artisan db:seed` si quieres usar registros de prueba en la base de datos
+8. Correr para mostrar las imagenes cargadas `php artisan storage:link`
+9. Genere la clave de cifrado de su aplicación usando `php artisan key:generate`
+10. Comience el proyecto ejecutando el sitio publico `php artisan serve`
+11. Comience el proyecto ejecutando el sitio administrador `npm run dev`
 
