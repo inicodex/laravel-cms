@@ -59,10 +59,10 @@ GET | api/posts/{id} | Show Specific Post
 1. Clonar el proyecto
 2. Vaya al directorio raíz del proyecto y ejecute `composer install` y `npm install`
 3. Vaya al directorio raíz del proyecto y Crear archivo `.htaccess`, agregar el script
-    <IfModule mod_rewrite.c>
+    `<IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^(.*)$ public/$1 [L]
-    </IfModule>
+    </IfModule>`
 4. Crear archivo `.env`, copiar los datos contenidos de `.env.example` luego ingresa tus credenciales
 5. Crear la Ruta de las imagenes (storage/app/public/images/posts)
 6. Ejecutar migraciones ejecutando `php artisan migrate`
